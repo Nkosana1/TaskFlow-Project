@@ -13,7 +13,7 @@ const { Server } = require('socket.io');
 require('dotenv').config();
 
 const connectDB = require('./config/database');
-const connectRedis = require('./config/redis');
+const { connectRedis } = require('./config/redis');
 const logger = require('./utils/logger');
 const errorHandler = require('./middleware/errorHandler');
 const socketHandler = require('./socket/socketHandler');
